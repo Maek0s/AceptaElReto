@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 // Wrong Answer, faltará algo por ver aún :/
 
-public class p100 {
+public class p100_WA {
 
 	public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
