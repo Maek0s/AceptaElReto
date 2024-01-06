@@ -7,7 +7,6 @@ public class p666 {
         int c = s.nextInt();
         s.nextLine();
 
-        String[] quitar = {" ", ";", ".", ":",","};
         char[] t1 = new char[500000];
         char[] t2 = new char[500000];
 
