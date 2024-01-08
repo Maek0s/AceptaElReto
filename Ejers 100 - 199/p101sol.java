@@ -156,7 +156,6 @@ public class p101sol {
             }
 
         }
-
+        s.close();
     }
-
 }
