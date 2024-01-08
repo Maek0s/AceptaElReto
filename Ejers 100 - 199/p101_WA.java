@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 1 63 62 4 5 59 58 8 56 10 11 53 52 14 15 49 48 18 19 45 44 22 23 41 25 39 38 28 29 35 34 32 33 31 30 36 37 27 26 40 24 42 43 21 20 46 47 17 16 50 51 13 12 54 55 9 57 7 6 60 61 3 2 64
  */
 
-public class p101 {
+public class p101_WA {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
