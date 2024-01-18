@@ -1,16 +1,20 @@
 import java.util.Scanner;
 
-public class p140_RTE {
+// AC: https://aceptaelreto.com/problem/submission.php?id=837775
+
+public class p140 {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
-        String n = "";
+        String n = "0";
         int suma = 0;
 
-        while (!n.equalsIgnoreCase("-1")) {
+        while (Integer.parseInt(n) >= 0) {
             n = s.nextLine();
 
-            if (n.equalsIgnoreCase("-1")) { break; }
+            if (Integer.parseInt(n) < 0) {
+                break;
+            }
 
             int[] numeros = new int[n.length()];
             suma = 0;
