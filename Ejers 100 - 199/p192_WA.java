@@ -24,6 +24,8 @@ public class p192_WA {
                 }
             }
             if (n == 1) { System.out.println("SI"); }
+
+            s.close();
         }
     }
 }
