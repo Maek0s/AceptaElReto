@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p101sol {
+public class solp101 {
 
     public static int calcularEsquinas(int[][] m) {
         int sumaEsquinas = 0;
