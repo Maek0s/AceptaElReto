@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p675PD {
+public class p675_PD {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
