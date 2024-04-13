@@ -6,7 +6,6 @@ public class p416_WA {
 
         int c = -1;
         int contador = 0;
-        int fix = 0;
         int y = 0;
         int x = 1;
         String n = "";
@@ -29,7 +28,6 @@ public class p416_WA {
                 fecha[contador][0] = dias[0];
                 fecha[contador][1] = dias[1];
                 contador++;
-                fix = 0;
             }
             contador = 0;
 
@@ -62,5 +60,7 @@ public class p416_WA {
             }
             respuesta = false;
         }
+
+        s.close();
     }
 }

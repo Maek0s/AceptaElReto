@@ -19,5 +19,7 @@ public class p191 {
             }
             System.out.println(resultado);
         }
+        
+        s.close();
     }
 }

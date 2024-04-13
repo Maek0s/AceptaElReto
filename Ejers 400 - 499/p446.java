@@ -32,5 +32,7 @@ public class p446 {
             }
             nombre = "";
         }
+
+        s.close();
     }
 }

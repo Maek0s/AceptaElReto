@@ -24,5 +24,7 @@ public class p703 {
 
             System.out.println(resultado);
         }
+
+        s.close();
     }
 }

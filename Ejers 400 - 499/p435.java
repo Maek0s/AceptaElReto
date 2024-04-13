@@ -33,5 +33,7 @@ public class p435 {
                 System.out.println("no subnormal");
             }
         }
+
+        s.close();
     }
 }
