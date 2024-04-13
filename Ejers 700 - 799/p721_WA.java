@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Esta es una alternativa que falla.
 
-public class p721WA {
+public class p721_WA {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class p416WA {
+public class p416_WA {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
