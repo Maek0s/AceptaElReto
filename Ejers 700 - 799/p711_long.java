@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class p711_RTE {
+public class p711_long {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 
         int c = s.nextInt();
 
         while (c-- != 0) {
-            int num = s.nextInt();
-            int resultado = 0;
+            long num = s.nextLong();
+            long resultado = 0;
 
-            String hola = Integer.toString(num);
+            String hola = Long.toString(num);
             int[] numeros = new int[hola.length()];
 
             for (int i = 0; i < numeros.length; i++) {
@@ -18,47 +18,41 @@ public class p711_RTE {
             }
 
             for (int i = 0; i < numeros.length; i++) {
-                if (i % 2 == 0) {
-                    resultado += posPar((i + 1), numeros[i], numeros);
+                if ((i + 1) % 2 == 0) {
+                    resultado += posPar(i, numeros[i], numeros);
+                    //System.out.println(numeros[i] + " " + resultado + " PAR");
                 } else {
-                    resultado += posImpar(i, numeros[i], numeros);
+                    resultado += posImpar(i + 1, numeros[i], numeros);
+                    //System.out.println(numeros[i] + " " + resultado + " IMPAR");
                 }
             }
             System.out.println(resultado);
         }
     }
 
-    public static int posPar (int posicion, int numero, int[] numeros) {
-        int min = 99999;
+    public static long posImpar (int posicion, int numero, int[] numeros) {
+        long min = 999999999999999999L;
 
         for (int i = posicion; i < numeros.length; i++) {
-
-            if (i == -1 || i >= numeros.length) {
-                break;
-            }
-
             if (numeros[i] < min) {
                 min = numeros[i];
+                //System.out.println(i + " " + min);
             }
         }
-
+        //System.out.println("(" + numero + " * " + 3 + " + " + min + ")");
         return (numero * 3 + min);
     }
 
-    public static int posImpar (int posicion, int numero, int[] numeros) {
-        int max = 0;
+    public static long posPar (int posicion, int numero, int[] numeros) {
+        long max = 0;
 
         for (int i = posicion; i >= 0; i--) {
-
-            if (i == -1 || i >= numeros.length) {
-                break;
-            }
-            
             if (numeros[i] > max) {
                 max = numeros[i];
             }
         }
 
+        //System.out.println("(" + numero + " * " + 2 + " + " + max + ")");
         return (numero * 2 + max);
     }
 }
