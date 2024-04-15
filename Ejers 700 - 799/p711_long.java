@@ -36,10 +36,13 @@ public class p711_long {
         for (int i = posicion; i < numeros.length; i++) {
             if (numeros[i] < min) {
                 min = numeros[i];
-                //System.out.println(i + " " + min);
+                System.out.println(i + " " + min);
             }
         }
-        //System.out.println("(" + numero + " * " + 3 + " + " + min + ")");
+
+        if (min == 999999999999999999L) { min = 0; System.out.println("ERROR"); }
+
+        System.out.println("(" + numero + " * " + 3 + " + " + min + ")");
         return (numero * 3 + min);
     }
 
