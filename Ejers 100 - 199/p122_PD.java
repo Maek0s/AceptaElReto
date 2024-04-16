@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // falta marcar la posicion donde esta
 
-public class p122PD {
+public class p122_PD {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
 

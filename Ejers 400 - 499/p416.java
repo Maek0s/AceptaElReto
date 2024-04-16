@@ -5,10 +5,10 @@ public class p416 {
         Scanner s = new Scanner(System.in);
 
         int c = -1;
-        int contador = 0;
+        //int contador = 0;
         String n = "";
-        String dia = "";
-        String mes = "";
+        //String dia = "";
+        //String mes = "";
 
         while (c != 0) {
             c = s.nextInt();
@@ -24,14 +24,16 @@ public class p416 {
                     dia = String.valueOf(n.charAt(0));
                 }*/
 
-                String[][] fecha = new String[c][2];
+                //String[][] fecha = new String[c][2];
                 String[] dias = n.split("/");
 
                 for (int j = 0; j < dias.length; j++) {
                     System.out.println(dias[i]);
                 }
             }
-            contador++;
+            //contador++;
         }
+
+        s.close();
     }
 }
