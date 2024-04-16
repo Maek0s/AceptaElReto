@@ -26,6 +26,8 @@ public class p711 {
             }
             System.out.println(resultado);
         }
+
+        s.close(); // Cierre del Scanner
     }
 
     public static long posImpar (int posicion, int numero, int[] numeros) {

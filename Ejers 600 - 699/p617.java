@@ -25,5 +25,7 @@ public class p617 {
 
             System.out.println();
         }
+
+        s.close(); // Cierre del Scanner
     }
 }

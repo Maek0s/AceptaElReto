@@ -12,7 +12,7 @@ public class p676 {
 
             int num1 = s.nextInt();
             int num2 = s.nextInt();
-            /*
+            
             for (int i = num1; i <= num2; i++) {
                 System.out.println(i);
                 if (i % 4 == 0) {
@@ -22,8 +22,10 @@ public class p676 {
                         }
                      }
                 }
-            }*/
+            }
             System.out.println(contnum2 + " " + contnum1);
         }
+
+        s.close(); // Cierre del Scanner
     }
 }
