@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class pAa {
 
@@ -21,8 +21,8 @@ public class pAa {
 				numeros[x] = n;
 			}
 			for (int i = 0; i < numeros.length; i++) {
-				if (i == 0) { 
-					lastnumber = numeros[i]; 
+				if (i == 0) {
+					lastnumber = numeros[i];
 				} else {
 					if (lastnumber > 0) {
 						if (numeros[i] < 0 && lastnumber * -1 - 1 == numeros[i]) {
