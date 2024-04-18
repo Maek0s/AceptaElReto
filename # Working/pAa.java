@@ -8,9 +8,8 @@ public class pAa {
 		int c = s.nextInt();
 		int lastnumber = 0;
 		
-		
 		while (c-- != 0) {
-			boolean resultado = false;
+			boolean resultado = true;
 			boolean negative = false;
 			int nums = s.nextInt();
 			
@@ -19,44 +18,38 @@ public class pAa {
 			for (int x = 0; x < nums; x++) {
 				int n = s.nextInt();
 				numeros[x] = n;
-			}
-			for (int i = 0; i < numeros.length; i++) {
-				if (i == 0) {
-					lastnumber = numeros[i];
+
+				if (x == 0) {
+					lastnumber = numeros[x];
 				} else {
-					if (lastnumber > 0) {
-						if (numeros[i] < 0 && lastnumber * -1 - 1 == numeros[i]) {
-							System.out.println(lastnumber + " " + numeros[i] + " - negativo,secuencia");
-							negative = true;
-						} else if (numeros[i] > 0 && lastnumber == numeros[i]) {
-							System.out.println(lastnumber + " " + numeros[i] + " - positivo,igual");
-						} else {
-							System.out.println(lastnumber + " B " + numeros[i]);
-							break;
-						}
-					} else if (lastnumber < 0) {
-						if (numeros[i] > 0 && lastnumber * -1 == numeros[i] + 1) {
-							System.out.println(lastnumber + " " + numeros[i] + " - positivo,secuencia");
-						} else if (numeros[i] < 0 && lastnumber == numeros[i]) {
-							System.out.println(lastnumber + " " + numeros[i] + " - negativo,igual");
-							negative = true;
-						} else {
-							System.out.println(lastnumber + " A " + numeros[i]);
-							break;
+					if (lastnumber < 0 && n < 0 || lastnumber > 0 && n > 0) {
+						if (lastnumber != n) {
+							resultado = false;
 						}
 					}
-					if (negative) {
-						lastnumber = numeros[i] * -1;
-						negative = false;
+				}
+				lastnumber = numeros[x];
+			}
+
+			if (!resultado) {
+				System.out.println("INCORRECTA");
+			} else {
+				for (int i = 0; i < numeros.length; i++) {
+					if (i == 0) {
+						lastnumber = numeros[i];
 					} else {
+						if (Math.abs(numeros[i]) > Math.abs(lastnumber) || lastnumber == numeros[i]) {
+							// System.out.println(numeros[i] +" . " + lastnumber);
+						} else {
+							// System.out.println(lastnumber + " " + numeros[i]);
+							resultado = false;
+							break;
+						}
 						lastnumber = numeros[i];
 					}
-					
 				}
+				System.out.println(resultado ? "CORRECTA" : "INCORRECTA");
 			}
-			System.out.println(resultado ? "CORRECTA" : "INCORRECTA");
 		}
-
 	}
-
 }

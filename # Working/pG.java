@@ -47,6 +47,7 @@ public class pG {
 				for (int k = 0; k < requisitos.size(); k++ ) {
 					if (requisitos.get(k).equals(habilidades.get(j))) {
 						//System.out.println("pass");
+						requisitos.remove(k);
 						contrequi++;
 						if (contrequi == requisitos.size()) {
 							System.out.println("POSIBLE");
@@ -55,6 +56,7 @@ public class pG {
 					}
 				}
 			}
+			requisitos.clear();
 			if (!val) {
 				System.out.println("IMPOSIBLE");
 			}
