@@ -1,7 +1,7 @@
 # AceptaElReto
 Mis ejercicios de AceptaElReto
 
-[Perfil en AceptaElReto](https://aceptaelreto.com/user/profile.php)
+<b>[Perfil en AceptaElReto](https://aceptaelreto.com/user/profile.php)</b>
 
 _WA = Wrong Answer
 _ST = Sin terminar
