@@ -9,7 +9,7 @@ public class p102_PD {
         while (fin) {
             String entrada = s.nextLine();
             System.out.println(codificar(entrada));
-            
+            //for (int i = 0; i < )
         }
 
         s.close();

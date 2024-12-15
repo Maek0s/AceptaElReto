@@ -24,7 +24,6 @@ public class p666_TLE {
                       .replace(";", "")
                       .replace(" ", "");
 
-
             if (texto1.equalsIgnoreCase(texto2)) {
                 System.out.println("SI");
             } else {
